@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>David Ntak | Web Developer | cinematographer| App Developer(andriod & IOS)| SEO expert</title>
+        <script src="https://kit.fontawesome.com/6950e8a5d8.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="stylesw4drone.css">
+        <link rel="stylesheet" href="stylesw4drone1.css">
+        <link rel="stylesheet" href="stylesw4drone2.css">
+        
+    </head>
+    <header style="background-color:black">
+    <div class="aq9">
+      <a href="courses.html">back</a>
+      </div>
+      <p>Drone Piloting for videography and photography</p>
+    </header>
+
+    <!-- section 1 -->
+    <div class="alkkl">
+    <h3>check out our drone piloting brochure. Sample video below.</h3>
+
+    <!-- video section -->
+    
+    <video width="400" controls>
+      <source src="video/4sephz.mp4" type="video/mp4">
+      
+      Your browser does not support HTML5 video.
+    </video>
+    
+    <!-- sample video -->
+   
+    <p>
+    Video courtesy of 
+    <a href="https://sephfilms.com/" target="_blank">Joseph Egom @ Sephz Films</a>.
+    </p>
+    <div class="vlog">
+    <p>This course teaches you from the very basic to advance on drone piloting for cinematography</p>
+    </div>
+  </div>
+  <hr>
+
+  <!-- section2 -->
+  <div class="help">
+    <h3>What You will learn</h3>
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ul>    
+  </div>
+
+  <!-- section3 tabs -->
+  <div class="tabp">
+
+    <p>Click on the buttons inside the tabbed menu:</p>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+    </div>
+    
+    <div id="London" class="tabcontent">
+      <h3>London</h3>
+      <p>London is the capital city of England.</p>
+    </div>
+    
+    <div id="Paris" class="tabcontent">
+      <h3>Paris</h3>
+      <p>Paris is the capital of France.</p> 
+    </div>
+    
+    <div id="Tokyo" class="tabcontent">
+      <h3>Tokyo</h3>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+</div>
+    
+
+
+
+
+
+
+
+
+<!-- script on tap -->
+<script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+   
+   
+ 
+</body>  
+
+ </html>  

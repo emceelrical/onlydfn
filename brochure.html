@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>David Ntak | Web Developer | cinematographer| App Developer(andriod & IOS)| SEO expert</title>
+        <script src="https://kit.fontawesome.com/6950e8a5d8.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles34.css">
+        <link rel="stylesheet" href="styles034.css">
+        <link rel="stylesheet" href="styles0034.css">
+        <link rel="stylesheet" href="styles01.css">
+        <link rel="stylesheet" href="styles0980.css">
+        <link rel="stylesheet" href="styles0i0.css">
+        <link rel="stylesheet" href="styles456789.css">
+  </head>
+  <body>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="Iindex.html">Home</a>
+      <a href="from.html">Form</a>
+      <button class="dropdown-btn">Dropdown+  
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container" style="font-size: 12px;">
+        <a href="dronepiloting.html">Drone Piloting</a>
+        <a href="#">Web Designing with(HTML5 & CSS)</a>
+        <a href="#">Sensored Technology</a>
+        <a href="#">Videography</a>
+        <a href="#">Video Editing</a>
+        <a href="#">3D & Whiteboard Animation</a>
+        <a href="#">App dev(IOS & Andriod)</a>
+        <a href="#">Graphic Designing</a>
+      </div>
+      
+    </div>
+    
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>
+      <p>Click on the hamburger menu/bar icon to open the sidebar, and click on<b> "dropdown+"</b> to access the different course brochure.</p>
+    </div>
+
+
+    
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="images/good-faces-62wQhEghaw0-unsplash.jpg" style="width:100%" height="500px">
+    <div class="text">Caption Text</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="images/jessica-felicio-FjvXUeYf1AA-unsplash.jpg" style="width:100%" height="500px">
+    <div class="text">Caption Two</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/IMG-20220608-WA0007.jpg" style="width:100%" height="500px">
+    <div class="text">Caption Three</div>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+
+  
+
+    
+
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+
+<script>
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+  
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+    dropdownContent.style.display = "none";
+    } else {
+    dropdownContent.style.display = "block";
+    }
+    });
+  }
+  </script>
+
+<!-- for slides -->
+<script>
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 6000); // Change image every 2 seconds
+  }
+  </script>
+
+  <!-- slides ends here  -->
+  
+  
+
+       
+  </body>
+
+    
+
